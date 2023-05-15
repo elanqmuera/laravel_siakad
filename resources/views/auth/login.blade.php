@@ -40,9 +40,10 @@
                         <li>{{ $error }}</li>
                     @endforeach
                 </ul>
+                @endif
                 <div class="form-group">
-                    <label for="nim"> Nomor Induk Mahasiswa</label>
-                  <input type="text" class="form-control form-control-lg" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa">
+                    <label for="nip"> Nomor Induk Pegawai</label>
+                  <input type="text" class="form-control form-control-lg" id="nip" name="nip" placeholder="Nomor Induk Mahasiswa">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>

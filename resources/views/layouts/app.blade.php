@@ -789,6 +789,34 @@
   <script src="{{asset('skydash/template')}}/js/dashboard.js"></script>
   <script src="{{asset('skydash/template')}}/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
+
+  {{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="text/javascript">
+    $(function(){
+      $(document).on('click','#hapus', function(e) {
+          e.preventDefault();
+          var link = $(this).attr("href");
+
+          Swal.fire({
+        title: 'Apa kamu yakin?',
+        text: "Anda tidak akan dapat mengembalikan ini!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, Hapus itu!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Terhapus!',
+            'Data telah terhapus.',
+            'success'
+          )
+  }
+})
+      })
+    })
+  </script> --}}
 </body>
 
 </html>

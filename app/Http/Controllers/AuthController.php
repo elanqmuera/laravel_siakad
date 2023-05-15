@@ -40,18 +40,18 @@ class AuthController extends Controller
         return view('auth/login');
     }
 
-    public function loginAksi(Request $request) {
-        Validator::make($request->all(),[
-            'nim' =>'required',
-            'password'=>'required'
-        ])->validate();
+    // public function loginAksi(Request $request) {
+    //     Validator::make($request->all(),[
+    //         'nim' =>'required',
+    //         'password'=>'required'
+    //     ])->validate();
 
-        // if (!Auth::attempt($request->only('nim','password'),$request->boolean('remember'))) {
-        //     throw ValidationException::withMessages([
-        //         'nim' => trans('auth.failed')
-        //     ]);
-        // }
-        $request->session()->regenerate();
-        return redirect()->route('dashboard');
-    }
-}
+    //     if (!Auth::attempt($request->only('nim','password'),$request->boolean('remember'))) {
+    //         throw ValidationException::withMessages([
+    //             'nim' => trans('auth.failed')
+    //         ]);
+    //     }
+    //     $request->session()->regenerate();
+    //     return redirect()->route('dashboard');
+    // }
+}   

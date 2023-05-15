@@ -14,6 +14,12 @@
         </a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="{{ route('mahasiswa')}}">
+          <i class="icon-grid menu-icon"></i>
+          <span class="menu-title">Mahasiswa</span>
+        </a>
+      </li>
+      {{-- <li class="nav-item">
         <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
           <i class="icon-columns menu-icon"></i>
           <span class="menu-title">Mahasiswa</span>
@@ -24,8 +30,9 @@
             <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Tambah Mahasiswa</a></li>
           </ul>
         </div>
+      </li> --}}
         <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="{{ route('kelas') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Kelas</span>
             </a>
