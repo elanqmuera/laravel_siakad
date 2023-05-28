@@ -37,13 +37,13 @@
               <span class="menu-title">Kelas</span>
             </a>
           </li>  <li class="nav-item">
-            <a class="nav-link" href="/">
+            <a class="nav-link" href="{{ route('jurusan') }}">
               <i class="icon-grid menu-icon"></i>
               <span class="menu-title">Jurusan</span>
             </a>
           </li>
       <li class="nav-item">
-        <a class="nav-link" href="/">
+        <a class="nav-link" href="{{ route('matkul') }}">
           <i class="icon-grid menu-icon"></i>
           <span class="menu-title">Mata Kuliah</span>
         </a>
